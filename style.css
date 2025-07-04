@@ -1,0 +1,83 @@
+/* Global resets & base font */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container to center content */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem 0;
+}
+header .logo {
+  display: inline-block;
+}
+nav {
+  float: right;
+}
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Hero/Search */
+.hero {
+  background: #f4f4f4;
+  padding: 2rem 0;
+  text-align: center;
+}
+#search-form input, #search-form button {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Featured Cars Grid */
+.featured {
+  padding: 2rem 0;
+  background: #fff;
+  text-align: center;
+}
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.car-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.car-card img {
+  width: 100%;
+}
+.car-card .info {
+  padding: 1rem;
+}
+
+/* Sections */
+section {
+  padding: 2rem 0;
+}
+footer {
+  background: #222;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
